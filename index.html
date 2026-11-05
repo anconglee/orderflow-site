@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrderFlow Pro - Amazon Order History & Invoice Exporter</title>
+  <meta name="description" content="One-click export Amazon order history to clean CSV/Excel and batch download official invoices into a ZIP archive for bookkeeping, CPAs, and IRS tax preparation.">
+  <link rel="icon" type="image/png" href="icon48.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="icon48.png" alt="OrderFlow Pro Logo" class="w-8 h-8 rounded-lg shadow-sm">
+        <span class="font-bold text-lg text-slate-900 tracking-tight">OrderFlow Pro</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#features" class="hover:text-slate-900 transition">Features</a>
+        <a href="#how-it-works" class="hover:text-slate-900 transition">How It Works</a>
+        <a href="#pricing" class="hover:text-slate-900 transition">Pricing</a>
+        <a href="#faq" class="hover:text-slate-900 transition">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="https://chromewebstore.google.com/detail/orderflow-pro-amazon-orde/klfaonecopnldfgebngpldgbhgofamgf" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg shadow-sm transition">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          Add to Chrome
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-16 pb-20 px-4 sm:px-6 max-w-5xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-semibold mb-6">
+      <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+      Chrome Web Store Verified & Live Globally
+    </div>
+    
+    <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight sm:leading-none mb-6">
+      Export Amazon Order History & <br class="hidden sm:block">
+      <span class="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Batch Invoices into a ZIP</span>
+    </h1>
+
+    <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Stop wasting hours manually opening orders and saving receipts one by one. Export formatted CSV spreadsheets and bundle all official PDF invoices in under 60 seconds.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+      <a href="https://chromewebstore.google.com/detail/orderflow-pro-amazon-orde/klfaonecopnldfgebngpldgbhgofamgf" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition text-base">
+        Install Free Extension
+      </a>
+      <a href="#pricing" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 font-semibold px-8 py-3.5 rounded-xl shadow-sm transition text-base">
+        View Lifetime Pro ($19.99)
+      </a>
+    </div>
+
+    <!-- Product Showcase Screenshot Mockup -->
+    <div class="relative mx-auto rounded-2xl p-2 bg-slate-900/5 ring-1 ring-slate-900/10 shadow-2xl overflow-hidden max-w-4xl">
+      <img src="store_screenshot_1280x800.png" alt="OrderFlow Pro Extension Interface" class="rounded-xl w-full h-auto">
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Engineered for Tax Prep & Bookkeeping</h2>
+        <p class="text-slate-600">Built for accountants, freelancers, and small businesses who need organized digital tax records without manual grunt work.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-5">📊</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">1-Click CSV / Excel Export</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Instantly export Order ID, Order Date, Items Description, Prices, and Official Receipt Links into a clean, CPA-ready spreadsheet.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center text-2xl mb-5">📦</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">Batch Invoices ZIP Archive</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Pro tier packages every official printable receipt into an organized Invoices directory with native 1-click Print / Save-to-PDF formatting.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-5">🔒</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">100% Client-Side Privacy</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Zero cloud uploads. All order parsing and document generation happen strictly in your local browser memory. Your financial data stays yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section id="how-it-works" class="py-20 max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">How It Works in 3 Steps</h2>
+      <p class="text-slate-600">No complicated setup. Works directly on your Amazon account page.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="p-6">
+        <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center mx-auto mb-4 text-sm">1</div>
+        <h3 class="font-bold text-slate-900 mb-2">Go to Your Orders</h3>
+        <p class="text-slate-600 text-sm">Open Amazon and navigate to your standard Your Orders page.</p>
+      </div>
+      <div class="p-6">
+        <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center mx-auto mb-4 text-sm">2</div>
+        <h3 class="font-bold text-slate-900 mb-2">Select Tax Year</h3>
+        <p class="text-slate-600 text-sm">Pick Tax Year 2026, 2025, 2024, or All Time from the dropdown filter.</p>
+      </div>
+      <div class="p-6">
+        <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center mx-auto mb-4 text-sm">3</div>
+        <h3 class="font-bold text-slate-900 mb-2">Download Tax Package</h3>
+        <p class="text-slate-600 text-sm">Click Export and receive a ZIP archive with your master spreadsheet and itemized invoices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Simple, Transparent Pricing</h2>
+        <p class="text-slate-600">No monthly recurring subscriptions. Pay once, own lifetime access.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <!-- Free Tier -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Free Starter</div>
+            <div class="text-3xl font-extrabold text-slate-900 mb-4">$0 <span class="text-sm font-normal text-slate-500">forever</span></div>
+            <p class="text-slate-600 text-sm mb-6">Essential spreadsheet export for casual shoppers and basic tracking.</p>
+            <ul class="space-y-3 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2">✓ Export visible orders to CSV</li>
+              <li class="flex items-center gap-2">✓ Basic price and item description</li>
+              <li class="flex items-center gap-2">✓ 100% Client-side privacy</li>
+            </ul>
+          </div>
+          <a href="https://chromewebstore.google.com/detail/orderflow-pro-amazon-orde/klfaonecopnldfgebngpldgbhgofamgf" target="_blank" class="w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-3 rounded-xl transition text-sm">
+            Add to Chrome (Free)
+          </a>
+        </div>
+
+        <!-- Lifetime Pro -->
+        <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-xl border border-slate-800 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-4 right-4 bg-amber-400 text-slate-900 text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+            Most Popular
+          </div>
+          <div>
+            <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Lifetime Buyout</div>
+            <div class="text-3xl font-extrabold text-white mb-4">$19.99 <span class="text-sm font-normal text-slate-400">one-time payment</span></div>
+            <p class="text-slate-300 text-sm mb-6">Complete bookkeeping automation for business expense reports, CPAs, and IRS filing.</p>
+            <ul class="space-y-3 text-sm text-slate-200 mb-8">
+              <li class="flex items-center gap-2">✓ <b>Batch ZIP archive of all official invoices</b></li>
+              <li class="flex items-center gap-2">✓ <b>1-Click Print / Save-to-PDF formatting</b></li>
+              <li class="flex items-center gap-2">✓ Multi-year order history export</li>
+              <li class="flex items-center gap-2">✓ Multi-device activation key</li>
+              <li class="flex items-center gap-2">✓ Free lifetime updates & priority support</li>
+              <li class="flex items-center gap-2 text-amber-300">✓ 30-Day Money-Back Guarantee</li>
+            </ul>
+          </div>
+          <a href="https://www.creem.io/payment/prod_6ccQwfvalYL4Ng3fE8q7wQ" target="_blank" class="w-full text-center bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3.5 rounded-xl shadow-lg transition text-sm">
+            Buy Lifetime Pro ($19.99)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-slate-900 text-center tracking-tight mb-12">Frequently Asked Questions</h2>
+      
+      <div class="space-y-6">
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
+          <h3 class="font-bold text-slate-900 mb-2">How does license activation work?</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">After completing payment via Creem, your digital license key is immediately displayed on screen and emailed to you. Open the OrderFlow Pro extension, click "Upgrade to Pro", paste your key, and click "Activate". Your Pro status is unlocked forever.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
+          <h3 class="font-bold text-slate-900 mb-2">Is my Amazon account and financial data safe?</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Yes, 100%. OrderFlow Pro processes everything locally in your browser memory. We have zero servers collecting, storing, or intercepting your order history. We never ask for your Amazon password.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
+          <h3 class="font-bold text-slate-900 mb-2">What is your refund policy?</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">We offer a 30-day no-questions-asked money-back guarantee. If OrderFlow Pro doesn't save you hours on bookkeeping, simply contact our support email at sevenneruda@gmail.com with your license key for a prompt full refund.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-slate-800">
+        <div class="flex items-center gap-3">
+          <img src="icon48.png" alt="Logo" class="w-7 h-7 rounded-lg">
+          <span class="font-bold text-white text-base">OrderFlow Studio</span>
+        </div>
+        <div class="flex items-center gap-6 text-xs text-slate-300">
+          <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+          <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+          <a href="refund.html" class="hover:text-white transition">Refund Policy</a>
+          <a href="mailto:sevenneruda@gmail.com" class="hover:text-white transition">Contact: sevenneruda@gmail.com</a>
+        </div>
+      </div>
+      <div class="pt-8 text-center text-xs text-slate-500">
+        © 2026 OrderFlow Studio. All rights reserved. OrderFlow Pro is an independent browser extension and is not affiliated with, sponsored by, or endorsed by Amazon.com, Inc.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
